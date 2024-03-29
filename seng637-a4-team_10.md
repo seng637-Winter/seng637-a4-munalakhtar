@@ -132,7 +132,8 @@ Data Utilities Class Final Mutation Statistics
 # Analysis drawn on the effectiveness of each of the test classes - Design Stratey
 The mutation score of the test suite for the Range class was improved by adding additional tests to cover the mutations that were listed in the No_Coverage section of the PIT Mutations results. As seen in the screenshot below, there were 167 mutations that had no coverage for the Range class. We were able to raise the mutation coverage by over 10% just by targeting those mutations.
 
-**add noCoverage.png**
+__No Coverage__
+<img src="media/noCoverage.png" alt="No Coverage Screenshot" />
 
 The mutation coverage was 90% initially, and there were no mutations in the NO_COVERAGE of the PIT test. To improve this, we targeted the survived mutations. While achieving a line coverage of 99% and 0 mutations in the NO_COVERAGE of the PIT test for DataUtilities is commendable, it's important to acknowledge that despite these achievements, the mutation coverage was only improved by 1%. This discrepancy could be attributed to several factors. Firstly, some mutations might have led to infinite loops, causing timeouts and consequently surviving the testing process. Additionally, certain mutations may have persisted because they resulted in changes that were not directly observable in the behavior of the method, especially under specific conditions. In such cases, these mutations may not significantly impact the overall functionality of the method. Furthermore, some surviving mutations might be equivalent mutations, meaning they produce equivalent results without affecting the observable behavior of the method. Considering these factors provides insight into why despite achieving high coverage rates, some mutations in DataUtilities may have survived, resulting in a mutation score of 91%.
 
