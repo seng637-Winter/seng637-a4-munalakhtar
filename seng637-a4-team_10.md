@@ -129,13 +129,35 @@ Data Utilities Class Final Score
 Data Utilities Class Final Mutation Statistics
 <img src="media/DUFinalStats.png" alt="Data Utilities Class Final Mutation Statistics" />
 
-# Analysis drawn on the effectiveness of each of the test classes
+# Analysis drawn on the effectiveness of each of the test classes - Design Stratey
+The mutation score of the test suite for the Range class was improved by adding additional tests to cover the mutations that were listed in the No_Coverage section of the PIT Mutations results. As seen in the screenshot below, there were 167 mutations that had no coverage for the Range class. We were able to raise the mutation coverage by over 10% just by targeting those mutations.
+
+**add noCoverage.png**
+
+The mutation coverage was 90% initially, and there were no mutations in the NO_COVERAGE of the PIT test. To improve this, we targeted the survived mutations. While achieving a line coverage of 99% and 0 mutations in the NO_COVERAGE of the PIT test for DataUtilities is commendable, it's important to acknowledge that despite these achievements, the mutation coverage was only improved by 1%. This discrepancy could be attributed to several factors. Firstly, some mutations might have led to infinite loops, causing timeouts and consequently surviving the testing process. Additionally, certain mutations may have persisted because they resulted in changes that were not directly observable in the behavior of the method, especially under specific conditions. In such cases, these mutations may not significantly impact the overall functionality of the method. Furthermore, some surviving mutations might be equivalent mutations, meaning they produce equivalent results without affecting the observable behavior of the method. Considering these factors provides insight into why despite achieving high coverage rates, some mutations in DataUtilities may have survived, resulting in a mutation score of 91%.
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
+Mutation testing serves as a technique to evaluate the effectiveness of a test suite. In this process, the original program undergoes systematic modifications to create mutants, which are slightly altered versions of the code. A mutant is deemed “killed” when the test suite produces different outputs compared to the original program during execution. The more mutants that are successfully killed, the more effective the test suite is at uncovering faults.
+
+However, a challenge arises due to the existence of equivalent mutants. These mutants exhibit the same behavior as the original program, making them indistinguishable from it. Consequently, the test suite fails to identify and eliminate these equivalent mutants. Although the test suite may effectively reveal other types of faults, the presence of equivalent mutants can distort the mutation score—the ratio of killed mutants to the total number of mutants. This discrepancy can lead to an inaccurate assessment of the test suite’s fault-revealing capability.
+
+To mitigate this issue, researchers have developed techniques for identifying and removing equivalent mutants. These methods often involve program analysis and constraint solving. By enhancing the accuracy of mutation testing, developers gain deeper insights into their test suite’s strengths and weaknesses. This informed perspective enables them to make better decisions about improving the overall quality of their software.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
+Mutation testing serves as a valuable technique for evaluating the effectiveness of test suites. By systematically introducing mutants (slightly altered versions of the code) into the original program, we can assess whether the test suite can detect these changes. Here are the key points:
+
+**Test Suite Quality Assessment:** Mutation testing provides a measure of test suite quality. It identifies areas where tests fail to detect modifications in the code. This highlights missing coverage in our test suite and helps improve overall coverage for our source code.  
+**Enhancing Software Reliability:** By revealing weaknesses in test suites, mutation testing contributes to the overall quality and reliability of software systems. It ensures that our tests are robust and capable of catching potential faults.  
+
+However, there are several challenges associated with mutation testing:
+
+**Computational Cost:** Generating numerous mutants and executing the entire test suite against each one can be computationally expensive.  
+**Complex Interpretation:** Interpreting mutation testing results can be intricate. Distinguishing false positives from false negatives may require manual effort.  
+**Mutation Operator Selection:** The effectiveness of mutation testing heavily depends on the selection and implementation of mutation operators. Limited mutation operators may not adequately represent real-world faults, leading to incomplete testing.  
+
+In summary, while mutation testing offers valuable insights into test suite quality, it also presents challenges such as computational costs and complexity.
 
 # Explain your SELENUIM test case design process
 
