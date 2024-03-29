@@ -225,4 +225,14 @@ One person each was assigned to figure out the setup and understand the procedur
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
+Challenges Faced with PiTest and Selenium:
+
+During our lab, our team encountered significant challenges while working with PiTest. The absence of documentation in the lab materials made it challenging to effectively divide and execute tests for each class. Initially, we encountered several hurdles when running PiTest, prompting us to shift our focus to the Selenium section.
+
+A key obstacle was our inability to run the test class if any individual tests failed. We needed to address these issues before proceeding with mutation coverage. Additionally, the varying run times of PiTest on different machines posed another challenge.
+
+Furthermore, we faced difficulties with Selenium. Specifically, after recording and rerunning tests, we noticed that they did not function properly.
+
+Overall, we experienced obstacles related to both PiTest and Selenium during the lab, valuable lessons were learnt while debugging/ configuring the software to work properly.
+
 # Comments/feedback on the assignment itself
