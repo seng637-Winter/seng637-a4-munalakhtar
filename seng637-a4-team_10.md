@@ -137,6 +137,11 @@ __No Coverage__
 
 The mutation coverage was 90% initially, and there were no mutations in the NO_COVERAGE of the PIT test. To improve this, we targeted the survived mutations. While achieving a line coverage of 99% and 0 mutations in the NO_COVERAGE of the PIT test for DataUtilities is commendable, it's important to acknowledge that despite these achievements, the mutation coverage was only improved by 1%. This discrepancy could be attributed to several factors. Firstly, some mutations might have led to infinite loops, causing timeouts and consequently surviving the testing process. Additionally, certain mutations may have persisted because they resulted in changes that were not directly observable in the behavior of the method, especially under specific conditions. In such cases, these mutations may not significantly impact the overall functionality of the method. Furthermore, some surviving mutations might be equivalent mutations, meaning they produce equivalent results without affecting the observable behavior of the method. Considering these factors provides insight into why despite achieving high coverage rates, some mutations in DataUtilities may have survived, resulting in a mutation score of 91%.
 
+__Time Out Infinite Loop__
+<img src="media/timeoutInfiniteLoop.png" alt="Time Out Inifinite Loop">
+
+
+
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 Mutation testing serves as a technique to evaluate the effectiveness of a test suite. In this process, the original program undergoes systematic modifications to create mutants, which are slightly altered versions of the code. A mutant is deemed “killed” when the test suite produces different outputs compared to the original program during execution. The more mutants that are successfully killed, the more effective the test suite is at uncovering faults.
 
