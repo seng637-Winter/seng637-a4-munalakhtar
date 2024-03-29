@@ -109,6 +109,25 @@ During this lab assignment, our primary focus centered around mutation testing a
     **Analysis**: This mutation replaced double subtraction with division, impacting the calculation of range lengths. However, the mutation was detected and killed by the test cases. Similar to previous mutations, the testLength() method played a crucial role in detecting the mutation. By comparing the expected lengths of ranges with the actual lengths, the test cases identified discrepancies caused by the replacement of subtraction with division, resulting in failed assertions and ultimately killing the mutation.
 
 # Report all the statistics and the mutation score for each test class
+## Initial Score and Statistics for Test classes
+Range Class Initial Score
+<img src="media/rangeInitialScore.png" alt="Range Class Initial Score" />
+Range Class Initial Mutation Statistics
+<img src="media/rangeInitialMutationStatistics.png" alt="Range Class Initial Mutation Statistics" />
+Data Utilities Class Initial Score
+<img src="media/DUInitialScore.png" alt="Data Utilities Class Initial Score" />
+Data Utilities Class Initial Mutation Statistics
+<img src="media/DUInitialStats.png" alt="Data Utilities Class Initial Mutation Statistics" />
+
+## Final Score and Statistics for Test classes
+Range Class Final Score
+<img src="media/rangeFinalMutationScore.png" alt="Range Class Final Score" />
+Range Class Final Mutation Statistics
+<img src="media/rangeFinalStatistics.png" alt="Range Class Final Mutation Statistics" />
+Data Utilities Class Final Score
+<img src="media/DUFinalScore.png" alt="Data Utilities Class Final Score" />
+Data Utilities Class Final Mutation Statistics
+<img src="media/DUFinalStats.png" alt="Data Utilities Class Final Mutation Statistics" />
 
 # Analysis drawn on the effectiveness of each of the test classes
 
