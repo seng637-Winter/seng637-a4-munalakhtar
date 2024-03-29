@@ -159,7 +159,7 @@ __Regarding the DataUtilities Test Class:__
 
 Initially, mutation coverage was 90%, and there were no NO_COVERAGE mutations. Despite achieving high line coverage and addressing specific mutations, the overall improvement was minimal (1%). Factors like infinite loops, subtle changes, and equivalent mutations explain why some mutations persisted, resulting in a 91% mutation score for DataUtilities.
 
-Although identifying and addressing specific mutations may be time-consuming, investing effort in refining our test suite will provide valuable insights into potential bugs within our methods.
+Although identifying and addressing specific mutations may be time-consuming, investing effort in refining our test class can provide valuable insights into potential bugs within our methods and thereby offer pathways to improvement in performance.
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 Mutation testing serves as a valuable technique for evaluating the effectiveness of test suites. By systematically introducing mutants (slightly altered versions of the code) into the original program, we can assess whether the test suite can detect these changes. Here are the key points:
