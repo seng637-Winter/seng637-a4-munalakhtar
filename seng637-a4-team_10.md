@@ -236,3 +236,5 @@ Furthermore, we faced difficulties with Selenium. Specifically, after recording 
 Overall, we experienced obstacles related to both PiTest and Selenium during the lab, valuable lessons were learnt while debugging/ configuring the software to work properly.
 
 # Comments/feedback on the assignment itself
+
+The lab assignment is designed to be engaging and insightful, with regards to topics of Mutation Testing and GUI testing. However, challenges in configuring the environment needlessly added to the amount of effort needed to set up the basis for performing the lab. Further clarity in the instructions for this assignment may prove helpful. 
