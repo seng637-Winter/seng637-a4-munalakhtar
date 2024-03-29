@@ -146,6 +146,16 @@ To mitigate this issue, researchers have developed techniques for identifying an
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
+__Enhancing Mutation Testing Strategy for the Range Class:__
+
+To improve our mutation testing strategy for the Range class, we could have adderessed the surviving mutations related to decremental or incremental scenarios. Developing targeted test cases that comprehensively cover these scenarios would have helped eliminate these mutations. Additionally, we could have focused on creating additional tests specifically designed to handle conditional operator mutations. By incorporating test cases that thoroughly utilize conditional logic, we can detect and eliminate mutations associated with these operators.
+
+__Regarding the DataUtilities Test Class:__
+
+Initially, mutation coverage was 90%, and there were no NO_COVERAGE mutations. Despite achieving high line coverage and addressing specific mutations, the overall improvement was minimal (1%). Factors like infinite loops, subtle changes, and equivalent mutations explain why some mutations persisted, resulting in a 91% mutation score for DataUtilities.
+
+Although identifying and addressing specific mutations may be time-consuming, investing effort in refining our test suite will provide valuable insights into potential bugs within our methods.
+
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 Mutation testing serves as a valuable technique for evaluating the effectiveness of test suites. By systematically introducing mutants (slightly altered versions of the code) into the original program, we can assess whether the test suite can detect these changes. Here are the key points:
 
