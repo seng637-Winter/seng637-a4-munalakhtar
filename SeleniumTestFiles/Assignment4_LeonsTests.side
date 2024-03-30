@@ -1,0 +1,1356 @@
+{
+  "id": "2c1370ba-cf99-467e-8173-2a8493b41f4d",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://www.leons.ca/",
+  "tests": [{
+    "id": "60fd3a52-094d-43dc-8ca1-246407e6b825",
+    "name": "Contact_Us_Form_Functionality_Check",
+    "commands": [{
+      "id": "6b9e6e0a-a489-42c5-892c-ed79bab1f684",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b8e72dd-e2be-48b4-bf16-e8c867f53b76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1520x970",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b70b7088-14b0-4f9f-b6af-b024cefa4af0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right li:nth-child(2) > a",
+      "targets": [
+        ["css=.pull-right li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact Us')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pages/contact-us')]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34c25bf2-7dad-49b2-a1f1-380ff45d843a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "CONTACT US"
+    }, {
+      "id": "0d62d4eb-cf0f-4fc6-851a-9595c23324a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=contact[name]", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8607879-68fb-40c8-a0f7-bad438101867",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=contact[name]", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "A"
+    }, {
+      "id": "afd07ea9-0eca-41f4-8f4a-517100d51842",
+      "comment": "",
+      "command": "click",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a24b0ea5-3744-4388-85b0-2d84324bc67b",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "B"
+    }, {
+      "id": "5104fe35-2f26-445e-878e-1c129c683b35",
+      "comment": "",
+      "command": "click",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=contact[body]", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//textarea[@id='address']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "570852cd-5a83-46ea-9cbf-897e4b0294ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=contact[body]", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//textarea[@id='address']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "1200 - Doe Street"
+    }, {
+      "id": "6d7f79fe-0e80-4a99-88c8-4eca59ccc93d",
+      "comment": "",
+      "command": "click",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=contact[city]", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb6973e-f17d-4af9-8f59-ff86dd57f728",
+      "comment": "",
+      "command": "type",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["name=contact[city]", "name"],
+        ["css=#city", "css:finder"],
+        ["xpath=//input[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Vancouver"
+    }, {
+      "id": "39255a71-e769-4190-b8cd-ea24d390d88f",
+      "comment": "",
+      "command": "click",
+      "target": "name=contact[province]",
+      "targets": [
+        ["name=contact[province]", "name"],
+        ["css=.form-group:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//select[@name='contact[province]']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b4be2b7-a80c-406e-9d43-d1e57669f1e5",
+      "comment": "",
+      "command": "select",
+      "target": "name=contact[province]",
+      "targets": [],
+      "value": "label=British Columbia"
+    }, {
+      "id": "4f639333-c759-4740-809b-679970761997",
+      "comment": "",
+      "command": "click",
+      "target": "id=postalcode",
+      "targets": [
+        ["id=postalcode", "id"],
+        ["name=contact[postalcode]", "name"],
+        ["css=#postalcode", "css:finder"],
+        ["xpath=//input[@id='postalcode']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "220cd0c4-6b5a-4d80-9e6b-36b7d1d0de28",
+      "comment": "",
+      "command": "type",
+      "target": "id=postalcode",
+      "targets": [
+        ["id=postalcode", "id"],
+        ["name=contact[postalcode]", "name"],
+        ["css=#postalcode", "css:finder"],
+        ["xpath=//input[@id='postalcode']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "V1K1M1"
+    }, {
+      "id": "138b8142-34b2-48f3-a055-3ee0fb1e4c02",
+      "comment": "",
+      "command": "click",
+      "target": "id=phonenumber",
+      "targets": [
+        ["id=phonenumber", "id"],
+        ["name=contact[phone]", "name"],
+        ["css=#phonenumber", "css:finder"],
+        ["xpath=//input[@id='phonenumber']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f3e575f-7cc8-4332-86e6-d3fdb9bfe55d",
+      "comment": "",
+      "command": "type",
+      "target": "id=phonenumber",
+      "targets": [
+        ["id=phonenumber", "id"],
+        ["name=contact[phone]", "name"],
+        ["css=#phonenumber", "css:finder"],
+        ["xpath=//input[@id='phonenumber']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "000000000"
+    }, {
+      "id": "1a226b40-5db2-4d85-930e-f423add6fbf3",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=contact[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47421f3b-769a-4f57-9e2b-041152328156",
+      "comment": "",
+      "command": "click",
+      "target": "id=phonenumber",
+      "targets": [
+        ["id=phonenumber", "id"],
+        ["name=contact[phone]", "name"],
+        ["css=#phonenumber", "css:finder"],
+        ["xpath=//input[@id='phonenumber']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a608e018-4bdb-4609-93ef-c68bf8af1dc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phonenumber",
+      "targets": [
+        ["id=phonenumber", "id"],
+        ["name=contact[phone]", "name"],
+        ["css=#phonenumber", "css:finder"],
+        ["xpath=//input[@id='phonenumber']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "0000000005656"
+    }, {
+      "id": "b97cd7c5-b7ae-4986-87eb-21bdc0789e3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=contact[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b2b617a-2dd0-4213-b57e-dc77ac6ac9c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=contact[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfb65207-d116-48a6-9c46-3713dc1fa9ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=contact[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56a81694-b555-4065-a7a5-672e1e991a1a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.contact_c",
+      "targets": [
+        ["css=.contact_c", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "134.3333282470703,746.9166870117188"
+    }, {
+      "id": "0a29212d-4982-415a-82fc-aaf8b0522ce7",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.contact_c",
+      "targets": [
+        ["css=.contact_c", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "134.3333282470703,746.9166870117188"
+    }, {
+      "id": "174e79d8-aeab-48b5-87e9-3ab7b5fc34ea",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.contact_c",
+      "targets": [
+        ["css=.contact_c", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "134.3333282470703,746.9166870117188"
+    }, {
+      "id": "bab5cad7-6a8f-47b9-95ef-56d1c827f26d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.contact_c",
+      "targets": [
+        ["css=.contact_c", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8636dedc-6f61-4ddc-87a5-55f6ceb96831",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=contact[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "xyz@abc.com"
+    }, {
+      "id": "8bf6bd5f-d650-43d0-8abb-ad41e3ee5459",
+      "comment": "",
+      "command": "click",
+      "target": "id=verifyemail",
+      "targets": [
+        ["id=verifyemail", "id"],
+        ["name=contact[verifyemail]", "name"],
+        ["css=#verifyemail", "css:finder"],
+        ["xpath=//input[@id='verifyemail']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "692246dd-d72b-4e4f-8e19-b7f608b0d3d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=verifyemail",
+      "targets": [
+        ["id=verifyemail", "id"],
+        ["name=contact[verifyemail]", "name"],
+        ["css=#verifyemail", "css:finder"],
+        ["xpath=//input[@id='verifyemail']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "xyz@abc.com"
+    }, {
+      "id": "ea7986f0-5f88-4628-b9c1-fb2cc7733bb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08fe6bca-c2e8-4eee-99fe-e91e0b51a89e",
+      "comment": "",
+      "command": "type",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "A test for university course "
+    }, {
+      "id": "2a71e76d-4408-4f2c-885b-23473ce1fc6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=contact[message]", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[11]/textarea", "xpath:idRelative"],
+        ["xpath=//div[11]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e547ef5b-7bb1-4374-a668-92615f025bcf",
+      "comment": "",
+      "command": "click",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bfe01c3-26e2-4139-b4dc-fec926bbfb57",
+      "comment": "",
+      "command": "click",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7d4a90c-58ba-4f1c-966e-da331e186dc7",
+      "comment": "",
+      "command": "click",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=contact[message]", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[11]/textarea", "xpath:idRelative"],
+        ["xpath=//div[11]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e08e54-29d1-4a4d-8a1b-66caca21e230",
+      "comment": "",
+      "command": "click",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae938acf-be44-4a4c-bd4f-4418fc5f3e47",
+      "comment": "",
+      "command": "type",
+      "target": "id=subject",
+      "targets": [
+        ["id=subject", "id"],
+        ["name=contact[subject]", "name"],
+        ["css=#subject", "css:finder"],
+        ["xpath=//input[@id='subject']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "A website test for university course "
+    }, {
+      "id": "630ecc55-e600-4cc1-a444-461b44b7093e",
+      "comment": "",
+      "command": "click",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=contact[message]", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[11]/textarea", "xpath:idRelative"],
+        ["xpath=//div[11]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62ceb15a-7055-4efc-860f-f39aa43eee58",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=contact[message]", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[11]/textarea", "xpath:idRelative"],
+        ["xpath=//div[11]/textarea", "xpath:position"]
+      ],
+      "value": "Please void this query"
+    }, {
+      "id": "4e4bbc91-6010-417b-9209-f7e3541c8c1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=salesorder",
+      "targets": [
+        ["id=salesorder", "id"],
+        ["name=contact[salesorder]", "name"],
+        ["css=#salesorder", "css:finder"],
+        ["xpath=//input[@id='salesorder']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4823a80-36ad-47d3-89c2-33eb11919505",
+      "comment": "",
+      "command": "type",
+      "target": "id=salesorder",
+      "targets": [
+        ["id=salesorder", "id"],
+        ["name=contact[salesorder]", "name"],
+        ["css=#salesorder", "css:finder"],
+        ["xpath=//input[@id='salesorder']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "8eafdf21-ead3-4a77-a8e9-bcc15c702a56",
+      "comment": "",
+      "command": "click",
+      "target": "id=hearWebsite",
+      "targets": [
+        ["id=hearWebsite", "id"],
+        ["name=contact[website]", "name"],
+        ["css=#hearWebsite", "css:finder"],
+        ["xpath=//select[@id='hearWebsite']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[13]/select", "xpath:idRelative"],
+        ["xpath=//div[13]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dee75ccb-eeca-49d8-88a9-b0fc863f6c66",
+      "comment": "",
+      "command": "click",
+      "target": "id=hearWebsite",
+      "targets": [
+        ["id=hearWebsite", "id"],
+        ["name=contact[website]", "name"],
+        ["css=#hearWebsite", "css:finder"],
+        ["xpath=//select[@id='hearWebsite']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[13]/select", "xpath:idRelative"],
+        ["xpath=//div[13]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a1c15be-9679-4a70-beff-ff97da8e027f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit-button",
+      "targets": [
+        ["css=.submit-button", "css:finder"],
+        ["xpath=//input[@value='Send']", "xpath:attributes"],
+        ["xpath=//div[@id='contact-form-section']/div/div[14]/div/input", "xpath:idRelative"],
+        ["xpath=//div[14]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f77b55cc-11a5-4912-99d5-351433f7ea08",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.twitter > a",
+      "targets": [
+        ["css=.twitter > a", "css:finder"],
+        ["xpath=//footer[@id='footer']/div/div/div/div[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/leonsfurniture')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe3fb242-5661-4b75-a802-25578e0d5026",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.twitter > a",
+      "targets": [
+        ["css=.twitter > a", "css:finder"],
+        ["xpath=//footer[@id='footer']/div/div/div/div[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/leonsfurniture')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a7ef700-cfbc-45b0-8441-f305e2230084",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "df7bb14d-e305-4690-883b-00e6d4f9f094",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "414bfbbf-62df-4bc6-a4e8-7ee39955393c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9aaa53b-4b44-42d4-8540-3f26f1ff4558",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=6",
+      "targets": [
+        ["index=6"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea5406ba-a184-446f-b250-d86e20b949bc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6b7688a-073e-4c35-aa97-e52819a9d93f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shopify-challenge__button",
+      "targets": [
+        ["css=.shopify-challenge__button", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//body[@id='challenge']/div[4]/div[3]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2925ca23-8d4c-4208-a851-0dde15318ad1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-success",
+      "targets": [
+        ["css=.form-success", "css:finder"],
+        ["xpath=//form[@id='contact_form']/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "907558a8-d274-4c2a-b8e3-fe41eb59e4cd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.form-success",
+      "targets": [
+        ["css=.form-success", "css:finder"],
+        ["xpath=//form[@id='contact_form']/p", "xpath:idRelative"],
+        ["xpath=//form/p", "xpath:position"]
+      ],
+      "value": "Thanks for contacting us. We'll get back to you as soon as possible."
+    }]
+  }, {
+    "id": "1bfdc545-7284-41d3-9285-260860dc9cde",
+    "name": "Search_CheckOut_Funcational_Check",
+    "commands": [{
+      "id": "10d3397b-5745-4261-91d0-bd325c007d16",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b73ef6d9-71d7-4df6-844e-7e340b2a67c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1520x970",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e58d29c-45cf-4a67-bd98-5c349811d3da",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ba08fe-d73d-4dc4-9a1b-2e81e74eb01d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "mattress"
+    }, {
+      "id": "a6824d4b-3ad5-4e2b-a947-2d44eb1570cd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d1f9335b-eb8c-4ae2-8ab4-55419b9c3303",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product_type .ais-RefinementList-item:nth-child(2) .ais-RefinementList-checkbox",
+      "targets": [
+        ["css=#product_type .ais-RefinementList-item:nth-child(2) .ais-RefinementList-checkbox", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='product_type']/div/div/div/div/ul/li[2]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/ul/li[2]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "415de566-dc81-484d-adfb-19167d9f399b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#named_tags_brand .ais-RefinementList-item:nth-child(3) .ais-RefinementList-checkbox",
+      "targets": [
+        ["css=#named_tags_brand .ais-RefinementList-item:nth-child(3) .ais-RefinementList-checkbox", "css:finder"],
+        ["xpath=(//input[@type='checkbox'])[15]", "xpath:attributes"],
+        ["xpath=//div[@id='named_tags_brand']/div/div/div/div/ul/li[3]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/div/div/ul/li[3]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6327d182-7f39-4ff2-b44c-27c2d7c56078",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ais-InfiniteHits-item:nth-child(2) .ais-hit--title",
+      "targets": [
+        ["css=.ais-InfiniteHits-item:nth-child(2) .ais-hit--title", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div[5]/div[2]/div/div/ol/li[2]/div[2]/a/div[2]/p", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/a/div[2]/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d67be3a-ef42-4c0c-bf35-d7f8d67658ce",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1.3333333730697632)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74472633-610d-4dcd-91fd-e6777e1f24bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mattressDropdownSize",
+      "targets": [
+        ["id=mattressDropdownSize", "id"],
+        ["css=#mattressDropdownSize", "css:finder"],
+        ["xpath=//button[@id='mattressDropdownSize']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45caa170-47f6-4598-ba1f-45694fd3bf76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mattress-size-queen .name",
+      "targets": [
+        ["css=.mattress-size-queen .name", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div/div/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Queen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "620b17eb-04cc-478f-b571-cd5a7e4bb7ba",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.magic_zoom_pic",
+      "targets": [
+        ["css=.magic_zoom_pic", "css:finder"],
+        ["xpath=//img[@alt='Tempur-Pedic Pro-React Plush Mattress Collection']", "xpath:img"],
+        ["xpath=//a[@id='zoom-v']/figure/img", "xpath:idRelative"],
+        ["xpath=//figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86ccaee0-af99-493f-95b1-3d8d0d899406",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.magic_zoom_pic",
+      "targets": [
+        ["css=.magic_zoom_pic", "css:finder"],
+        ["xpath=//img[@alt='Tempur-Pedic Pro-React Plush Mattress Collection']", "xpath:img"],
+        ["xpath=//a[@id='zoom-v']/figure/img", "xpath:idRelative"],
+        ["xpath=//figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1733606e-399e-4808-ba64-9e9e12bbb485",
+      "comment": "",
+      "command": "click",
+      "target": "id=mattressDropdownPillow",
+      "targets": [
+        ["id=mattressDropdownPillow", "id"],
+        ["css=#mattressDropdownPillow", "css:finder"],
+        ["xpath=//button[@id='mattressDropdownPillow']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a23a21b-172c-4908-88fe-20e72d490d1a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=No Pillow",
+      "targets": [
+        ["linkText=No Pillow", "linkText"],
+        ["css=.open .deselect > a", "css:finder"],
+        ["xpath=//a[contains(text(),'No Pillow')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div[3]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'No Pillow')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bbffd9-92d0-4466-984e-3084d6f7d112",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=mattressDropdownSize",
+      "targets": [
+        ["id=mattressDropdownSize", "id"],
+        ["css=#mattressDropdownSize", "css:finder"],
+        ["xpath=//button[@id='mattressDropdownSize']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40d6f4d2-f734-467c-a3b0-b9ad2c186c2c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=mattressDropdownSize",
+      "targets": [
+        ["id=mattressDropdownSize", "id"],
+        ["css=#mattressDropdownSize", "css:finder"],
+        ["xpath=//button[@id='mattressDropdownSize']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div/div[2]/div[2]/div/div[5]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21eab3aa-01a3-4e6a-b1e7-825a602618a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reviews",
+      "targets": [
+        ["linkText=Reviews", "linkText"],
+        ["css=#mattressDescriptionReviewsHeading .h3", "css:finder"],
+        ["xpath=(//a[contains(text(),'Reviews')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mattressDescriptionReviewsHeading']/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#mattressDescriptionReviewsBody')]", "xpath:href"],
+        ["xpath=//div[4]/div/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b5ced1-d9d2-42a5-b461-5853cdf0a5f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_btn-label",
+      "targets": [
+        ["css=.cart_btn-label", "css:finder"],
+        ["xpath=//button[@id='addToCart']/span", "xpath:idRelative"],
+        ["xpath=//form/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ab91f7-06d6-4c8d-96b0-22f689cbd326",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proceed to Cart",
+      "targets": [
+        ["linkText=Proceed to Cart", "linkText"],
+        ["css=.go-to-checkout", "css:finder"],
+        ["xpath=//a[contains(text(),'Proceed to Cart')]", "xpath:link"],
+        ["xpath=//dialog[@id='add_to_cart-popup']/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proceed to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7109e41c-7194-430c-9d8e-65382118f3ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=postal-code-popup",
+      "targets": [
+        ["id=postal-code-popup", "id"],
+        ["name=postal_code", "name"],
+        ["css=#postal-code-popup", "css:finder"],
+        ["xpath=//input[@id='postal-code-popup']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed70e8e-4ccb-4ed3-aad4-55ddc3c216fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=postal-code-popup",
+      "targets": [
+        ["id=postal-code-popup", "id"],
+        ["name=postal_code", "name"],
+        ["css=#postal-code-popup", "css:finder"],
+        ["xpath=//input[@id='postal-code-popup']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "T3J0S6"
+    }, {
+      "id": "9b9cc8e1-7154-4850-8cf6-c553eaf87b95",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=postal-code-confirm",
+      "targets": [
+        ["id=postal-code-confirm", "id"],
+        ["css=#postal-code-confirm", "css:finder"],
+        ["xpath=//button[@id='postal-code-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "173d74a9-4bef-4cb9-963e-a2fdf4c2b4a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=postal-code-confirm",
+      "targets": [
+        ["id=postal-code-confirm", "id"],
+        ["css=#postal-code-confirm", "css:finder"],
+        ["xpath=//button[@id='postal-code-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a0b4932-ccec-4289-8c73-dc5ba01a4563",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=postal-code-confirm",
+      "targets": [
+        ["id=postal-code-confirm", "id"],
+        ["css=#postal-code-confirm", "css:finder"],
+        ["xpath=//button[@id='postal-code-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6b30d554-a1b1-44e0-9f68-c93a9580b098",
+    "name": "Flyer_Checkout_Functionality_Check",
+    "commands": [{
+      "id": "038b0c96-2b43-40ba-8a66-daa7f9d02ced",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd0eb0c2-3e29-4f02-b2d1-1f4a9ec30601",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b52bfbc6-429e-4fac-92a9-5edf0317a983",
+      "comment": "",
+      "command": "click",
+      "target": "id=flyer",
+      "targets": [
+        ["id=flyer", "id"],
+        ["linkText=VIEW FLYER", "linkText"],
+        ["css=#flyer", "css:finder"],
+        ["xpath=//a[contains(text(),'VIEW FLYER')]", "xpath:link"],
+        ["xpath=//a[@id='flyer']", "xpath:attributes"],
+        ["xpath=//div[@id='hero-button-wrap']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pages/flyer')])[3]", "xpath:href"],
+        ["xpath=//section/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VIEW FLYER ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6972c0e1-5422-45ba-b00e-6abcb1621aac",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a187b8-b459-4b51-9fba-f377dff9dbaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=flipp-postal-selector",
+      "targets": [
+        ["css=flipp-postal-selector", "css:finder"],
+        ["xpath=//flipp-postal-selector", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f2869c4-e094-401a-8e20-04178751181a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#submit-postal-code > flipp-translation",
+      "targets": [
+        ["css=#submit-postal-code > flipp-translation", "css:finder"],
+        ["xpath=//button[@id='submit-postal-code']/flipp-translation", "xpath:idRelative"],
+        ["xpath=//button/flipp-translation", "xpath:position"],
+        ["xpath=//flipp-translation[contains(.,'See Stores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58e18e73-783f-4245-935b-4d21829e640f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.store-list-item:nth-child(1) flipp-translation",
+      "targets": [
+        ["css=.store-list-item:nth-child(1) flipp-translation", "css:finder"],
+        ["xpath=//div[2]/button/flipp-translation", "xpath:position"],
+        ["xpath=//flipp-translation[contains(.,'Select')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c12414c-1fb0-444c-9487-744622370f18",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "92860570-501b-4cbf-86a0-736f1b1a3124",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c598656-a058-447d-a291-e911ca32cf82",
+      "comment": "",
+      "command": "click",
+      "target": "css=sfml-flyer-image:nth-child(1) button:nth-child(7)",
+      "targets": [
+        ["css=sfml-flyer-image:nth-child(1) button:nth-child(7)", "css:finder"],
+        ["xpath=//button[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1f93ea1-a4c8-442f-a347-4a9947032c7a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "61ff4d8f-d4f4-4b04-acbe-297263015463",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "63fd1be8-5c86-4f1a-be9b-4c2442e4e8cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BUY NOW",
+      "targets": [
+        ["linkText=BUY NOW", "linkText"],
+        ["css=.see-more-link", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.leons.ca/products/dannery-pop-up-sofabed-light-grey')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'BUY NOW')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7688",
+      "windowTimeout": 2000
+    }, {
+      "id": "86aaec5e-b9a6-4f23-8520-78ebd414c5da",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7688}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab91ecd1-e8fc-4df5-9010-18727dd4c9ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_btn-label",
+      "targets": [
+        ["css=.cart_btn-label", "css:finder"],
+        ["xpath=//button[@id='addToCart']/span", "xpath:idRelative"],
+        ["xpath=//form/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d461fd39-6817-41b7-a956-69731a5aa8c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proceed to Cart",
+      "targets": [
+        ["linkText=Proceed to Cart", "linkText"],
+        ["css=.go-to-checkout", "css:finder"],
+        ["xpath=//a[contains(text(),'Proceed to Cart')]", "xpath:link"],
+        ["xpath=//dialog[@id='add_to_cart-popup']/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proceed to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c828d869-ece4-43af-bd86-bda412cbaaf9",
+      "comment": "",
+      "command": "click",
+      "target": "id=postal-code-confirm",
+      "targets": [
+        ["id=postal-code-confirm", "id"],
+        ["css=#postal-code-confirm", "css:finder"],
+        ["xpath=//button[@id='postal-code-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6c6012a7-bac1-4070-a7a2-e5e0ce3c108e",
+    "name": "Flyer_WishList_Functionality_Check",
+    "commands": [{
+      "id": "3c1d5928-2bc6-4c75-9a00-a921076c4dfb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a120c05-9084-4466-b8d0-93f6290c6942",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x942",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6934d113-56af-4809-aee2-4c1933c6c136",
+      "comment": "",
+      "command": "click",
+      "target": "id=flyer",
+      "targets": [
+        ["id=flyer", "id"],
+        ["linkText=VIEW FLYER", "linkText"],
+        ["css=#flyer", "css:finder"],
+        ["xpath=//a[contains(text(),'VIEW FLYER')]", "xpath:link"],
+        ["xpath=//a[@id='flyer']", "xpath:attributes"],
+        ["xpath=//div[@id='hero-button-wrap']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pages/flyer')])[3]", "xpath:href"],
+        ["xpath=//section/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VIEW FLYER ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4c9a2b-c7a5-4095-818e-39482ab256d6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=9",
+      "targets": [
+        ["index=9"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a0c0286-ddb3-4ea7-9d95-227130c30c49",
+      "comment": "",
+      "command": "click",
+      "target": "css=sfml-flyer-image:nth-child(1) button:nth-child(46)",
+      "targets": [
+        ["css=sfml-flyer-image:nth-child(1) button:nth-child(46)", "css:finder"],
+        ["xpath=//button[44]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b3b281d-c99e-42f6-a9ca-162f1dfbf583",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "4400452c-988e-49f7-a79c-ffb2df682a5b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=10",
+      "targets": [
+        ["index=10"]
+      ],
+      "value": ""
+    }, {
+      "id": "22f82d2e-b1a0-439a-8cbc-f9f5890b214c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BUY NOW",
+      "targets": [
+        ["linkText=BUY NOW", "linkText"],
+        ["css=.see-more-link", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.leons.ca/products/eden-3-piece-queen-storage-bed-dark-brown')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'BUY NOW')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win681",
+      "windowTimeout": 2000
+    }, {
+      "id": "68c6cd35-da98-49af-83a4-44c42b3390c8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win681}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9610928-8776-4851-ad84-e7474e10ee7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-heart",
+      "targets": [
+        ["css=.fa-heart", "css:finder"],
+        ["xpath=//form[@id='addToCartForm']/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77a99b62-96ed-4975-98ec-1d465cb6dcbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wishlist_text",
+      "targets": [
+        ["css=.wishlist_text", "css:finder"],
+        ["xpath=(//a[contains(text(),'View Wishlist')])[2]", "xpath:link"],
+        ["xpath=//form[@id='addToCartForm']/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pages/account-wishlist')])[2]", "xpath:href"],
+        ["xpath=//form/div/div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3a84b9f-2ef3-49f9-949c-d7b791212013",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card-detail-title",
+      "targets": [
+        ["css=.card-detail-title", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[3]/div/div/div/a/div[2]/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//div[3]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Eden 3-Piece Queen Storage Bed - Dark Brown')]", "xpath:innerText"]
+      ],
+      "value": "Eden 3-Piece Queen Storage Bed - Dark Brown"
+    }]
+  }],
+  "suites": [{
+    "id": "c5cbecc7-f3e2-4fba-9e61-337e38ddeeec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demo.guru99.com/"],
+  "plugins": []
+}
